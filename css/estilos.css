@@ -20,8 +20,8 @@ body {
     line-height: 1.5;
     display: grid;
     grid-template-areas: "header"
-                        "body"
-                        "footer";
+        "body"
+        "footer";
     grid-template-columns: 100%;
 
     /* width: 100%; */
@@ -64,6 +64,25 @@ header {
     width: 240px;
 
 }
+
+.header__buscador--imagen {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+    -webkit-animation-duration: 1.7s;
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+
 
 .header__buscador__busqueda {
 
@@ -277,6 +296,13 @@ main {
 
 }
 
+/* HOVER */
+
+.section__div__div__body--img :hover {
+    height: 300px;
+    width: 300px;
+
+}
 
 .section__div__div__body--img1 {
     margin: 10px 20px;
@@ -284,6 +310,16 @@ main {
     height: 250px;
     border-radius: 5px;
     border-style: inset;
+}
+
+.section__div__div__body--img1:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.section__div__div__body--img:hover {
+    height: 300px;
+    width: 300px;
 }
 
 .section__div__div__body--img2 {
@@ -295,6 +331,11 @@ main {
 
 }
 
+.section__div__div__body--img2:hover {
+    height: 300px;
+    width: 300px;
+}
+
 .section__div__div__body--img3 {
     margin: 10px 20px;
     width: 250px;
@@ -302,6 +343,11 @@ main {
     border-radius: 5px;
     border-style: inset;
 
+}
+
+.section__div__div__body--img3:hover {
+    height: 300px;
+    width: 300px;
 }
 
 footer {
@@ -339,6 +385,7 @@ footer {
     width: 60px;
     text-align: center;
 }
+
 
 .div {
     /* background-color: aquamarine; */
