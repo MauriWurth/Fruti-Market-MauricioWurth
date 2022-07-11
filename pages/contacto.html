@@ -2,24 +2,24 @@
 <html lang="es">
 
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fruti Market-Fruti Market</title>
-        <link rel="shortcut icon" href="../images/favicon/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
-    
-    
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruti Market-Fruti Market</title>
+    <link rel="shortcut icon" href="../images/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
     <header>
         <div class="header__div">
@@ -42,6 +42,10 @@
         <nav>
 
             <!-- lista desordenada -->
+
+            <a class="btnResp" href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
 
             <ul class="nav__ul">
                 <li class="nav__ul--li">
@@ -68,20 +72,21 @@
     </header>
     <main>
 
-            <form action="" method="post" enctype="multipart/form-data">
-                <label for="nombre">Ingrese su nombre</label>
+        <form class="formulario" action="" method="post" enctype="multipart/form-data">
+            <div class="form__data">
+                <label for="nombre">Ingrese su nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
-                <br>
-                <form action="" method="post" enctype="multipart/form-data">
-                    <label for="correo">Ingrese su email</label>
-                    <input type="email" id="correo" name="correo" placeholder="ingrese su mail...">
-                    <br>
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <label for="comentarios">deje sus comentarios</label>
-                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"
-                            placeholder="deje sus comentarios..."></textarea>
-                        <button type="submit">enviar</button>
-                    </form>
+            </div>
+            <div class="form__data">
+                <label for="correo">Ingrese su email:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su mail...">
+            </div>
+            <div class="form__data">
+                <label for="comentarios">Comentario:</label>
+                <textarea name="comentarios" id="comentarios" placeholder="Deje sus comentarios..."></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
     </main>
     <footer>
         <div class="div">
