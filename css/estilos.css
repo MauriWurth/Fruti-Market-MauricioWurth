@@ -7,14 +7,17 @@
 }
 
 img {
+
     display: block;
 }
 
 html {
+
     font-size: 10px;
 }
 
 body {
+
     font-family: Arial, Helvetica, sans-serif;
     background-color: #AB3E26;
     line-height: 1.5;
@@ -24,7 +27,6 @@ body {
         "footer";
     grid-template-columns: 100%;
 
-    /* width: 100%; */
 }
 
 header {
@@ -42,6 +44,7 @@ header {
 }
 
 .header__div--p {
+
     text-align: center;
     color: white;
     background-color: #F25835;
@@ -60,12 +63,14 @@ header {
 }
 
 .header__buscador--imagen {
+
     height: 120px;
     width: 240px;
 
 }
 
 .header__buscador--imagen {
+
     -webkit-animation-name: blinker;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
@@ -74,6 +79,7 @@ header {
 }
 
 @-webkit-keyframes blinker {
+
     from {
         opacity: 1.0;
     }
@@ -103,6 +109,7 @@ header {
 }
 
 .header__buscador__busqueda--btn {
+
     background-color: #F25835;
     border: solid 1px #0007;
     font-size: 2.2rem;
@@ -113,12 +120,14 @@ header {
 }
 
 .header__buscador__iconos {
+
     width: 220px;
     display: flex;
     justify-content: flex-end;
 }
 
 .icono {
+
     color: #F25835;
     font-size: 4rem;
     padding: 10px;
@@ -126,6 +135,7 @@ header {
 }
 
 nav {
+
     background-color: #F25835;
     display: flex;
     justify-content: space-between;
@@ -133,6 +143,7 @@ nav {
 }
 
 .btnResp {
+
     font-size: 3rem;
     color: white;
     margin: 0 20px;
@@ -140,7 +151,7 @@ nav {
 }
 
 .nav__ul {
-    /* background-color: green; */
+
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -152,13 +163,11 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 2rem;
-
-    /* Engrosar texto */
     font-weight: 900;
 }
 
 .nav__div {
-    /* background-color: red; */
+
     margin: 10px 20px;
     display: flex;
     justify-content: center;
@@ -166,6 +175,7 @@ nav {
 }
 
 .nav__div--input {
+
     width: 240px;
     padding: 10px;
     font-size: 1.6rem;
@@ -175,6 +185,7 @@ nav {
 }
 
 .nav__div--icono {
+
     background-color: #F25835;
     font-size: 40px;
     color: green;
@@ -182,6 +193,7 @@ nav {
 }
 
 main {
+
     background-color: #AB3E26;
     color: white;
     font-size: 2rem;
@@ -199,6 +211,7 @@ main {
 }
 
 .img__container {
+
     margin-top: 20px;
     margin-bottom: 20px;
     width: 450px;
@@ -206,6 +219,7 @@ main {
 }
 
 .carta {
+
     border: 2px inset white;
     box-shadow: 3px 3px 5px #000;
 }
@@ -216,16 +230,10 @@ main {
     height: 100%;
 }
 
-/* .section__header__div--img--img {
-    margin: 10px 20px;
-    width: 450px;
-    height: 450px;
-    border-radius: 5px;
-    border-style: inset;
-} */
 
 .section__header__div--div {
     display: flex;
+
     flex-direction: column;
     justify-content: flex-start;
     width: 500px;
@@ -239,11 +247,13 @@ main {
 }
 
 .section__header__div--h3 {
+
     font-size: 4rem;
     font-weight: 600;
 }
 
 .section__header__div--h3--p {
+
     font-size: 2rem;
 
 }
@@ -258,16 +268,19 @@ main {
 }
 
 .div__table--th {
+
     font-size: 4rem;
     border-style: inset;
 }
 
 .div__table--tr {
+
     font-size: 2rem;
     border-style: inset;
 }
 
 .div__table--tr td {
+
     font-size: 2rem;
     border-style: inset;
 
@@ -289,7 +302,6 @@ main {
 
     padding-top: 10px;
     padding-bottom: 100px;
-    /* width: 100%; */
     margin: 10px 20px;
     display: flex;
     justify-content: space-evenly;
@@ -298,6 +310,7 @@ main {
 }
 
 .section__div__div__body--img {
+
     margin: 10px 20px;
     width: 250px;
     height: 250px;
@@ -310,6 +323,7 @@ main {
 /* HOVER */
 
 .section__div__div__body--img1 {
+
     margin: 10px 20px;
     width: 250px;
     height: 250px;
@@ -318,11 +332,13 @@ main {
 }
 
 .section__div__div__body--img:hover {
+
     transform: scale(1.1);
     transition: transform .2s;
 }
 
 .section__div__div__body--img2 {
+
     margin: 10px 20px;
     width: 250px;
     height: 250px;
@@ -332,6 +348,7 @@ main {
 }
 
 .section__div__div__body--img3 {
+
     margin: 10px 20px;
     width: 250px;
     height: 250px;
@@ -347,8 +364,6 @@ footer {
     justify-content: space-between;
     height: 180px;
 
-    grid-area: footer;
-
 }
 
 .productdata {
@@ -357,15 +372,16 @@ footer {
 }
 
 .borde {
+
     position: relative;
 }
 
 .carrito {
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    /* text-align: center; */
     width: 100%;
     background-color: #F25835;
     color: white;
@@ -374,11 +390,9 @@ footer {
     border-top: 2px outset;
 }
 
-.carIcon {
-    /* background-color: red; */
-}
 
 .oferta {
+
     position: absolute;
     top: 20px;
     background-color: orange;
@@ -390,7 +404,7 @@ footer {
 
 
 .div {
-    /* background-color: aquamarine; */
+
     display: flex;
     justify-content: space-between;
 
@@ -398,6 +412,7 @@ footer {
 }
 
 .div__div {
+
     display: flex;
     flex-direction: column;
 }
@@ -412,6 +427,7 @@ footer {
 }
 
 .div__form__input {
+
     border: solid 1px #0007;
     padding: 10px;
     height: 40px;
@@ -422,6 +438,7 @@ footer {
 }
 
 .div__form__input--button {
+
     background-color: #F25835;
     border: solid 1px #0007;
     font-size: 1.6rem;
@@ -449,6 +466,7 @@ footer {
 }
 
 .div__form--a a {
+
     text-decoration: none;
     color: white;
     margin: 0px 10px;
@@ -459,6 +477,7 @@ footer {
 
 
 .div__form--p p {
+
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
@@ -467,6 +486,7 @@ footer {
 }
 
 .foot__iconos {
+
     color: #AB3E26;
     width: 10%;
     font-size: 4rem;
@@ -483,7 +503,7 @@ footer {
 
 /* FORMULARIO */
 .formulario {
-    /* background-color: red; */
+
     padding: 20px;
     display: flex;
     gap: 5px;
@@ -493,6 +513,7 @@ footer {
 }
 
 .form__data {
+
     max-width: 800px;
     min-width: 320px;
     width: 80%;
@@ -502,6 +523,7 @@ footer {
 }
 
 .formulario input,
+
 .formulario textarea {
     width: 300px;
     border-radius: 5px;
@@ -511,17 +533,19 @@ footer {
 }
 
 .formulario label {
-    /* background-color: green; */
+
     text-align: right;
     display: inline-block;
     width: 200px;
 }
 
 .formulario textarea {
+
     height: 150px;
 }
 
 .formulario button {
+
     display: inline-block;
     max-width: 200px;
     min-width: 50px;
@@ -548,6 +572,10 @@ footer {
         display: none;
     }
 
+    .header__buscador__busqueda--btn {
+        display: none;
+    }
+
     .section__header__div {
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr);
@@ -564,4 +592,10 @@ footer {
     .div__form--a a {
         margin: 0;
     }
+
+    .section__div__div__body {
+        flex-direction: column;
+
+    }
+    
 }
