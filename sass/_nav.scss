@@ -1,0 +1,58 @@
+nav {
+
+    background-color: $color_base;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnResp {
+
+    font-size: 3rem;
+    color: white;
+    margin: 0 20px;
+    display: none;
+}
+
+.nav__ul {
+
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
+    list-style: none;
+}
+
+.nav__ul--li--a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nav__div {
+
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__div--input {
+
+    width: 240px;
+    padding: 10px;
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: 10px;
+    border: solid 1px #0007;
+}
+
+.nav__div--icono {
+
+    background-color: $color_base;
+    font-size: 40px;
+    color: green;
+    margin-left: 10px;
+}
+
