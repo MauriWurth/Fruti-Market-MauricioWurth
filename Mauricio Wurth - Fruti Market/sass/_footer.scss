@@ -1,0 +1,216 @@
+footer {
+
+    background-color: $color_base;
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+
+}
+
+.productdata {
+
+    text-align: center;
+}
+
+.borde {
+
+    position: relative;
+}
+
+.carrito {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    background-color: $color_base;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-top: 2px outset;
+}
+
+
+.oferta {
+
+    position: absolute;
+    top: 20px;
+    background-color: orange;
+    transform: rotate(-45deg);
+    font-size: 2rem;
+    width: 60px;
+    text-align: center;
+}
+
+
+.div {
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.div__div {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.div__form {
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px 80px;
+
+}
+
+.div__form__input {
+
+    border: solid 1px #0007;
+    padding: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 1.6rem;
+    border-radius: 14px 0 0 14px;
+    outline: none;
+}
+
+.div__form__input--button {
+
+    background-color: $color_base;
+    border: solid 1px #0007;
+    font-size: 1.6rem;
+    height: 40px;
+    padding: 10px;
+    border-radius: 0 14px 14px 0;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.div__form--a {
+
+    width: 50%;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 80px;
+
+    & a {
+        padding: 5px;
+    }
+    & a:hover {
+        @extend .itemHover;
+        background-color: orange
+    }
+
+}
+
+.div__form--a a {
+
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    font-size: 1.5rem;
+
+
+}
+
+
+.div__form--p p {
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.foot__iconos {
+    width: 10%;
+    font-size: 4rem;
+    padding: 10px;
+    margin: 10px;
+    text-align: end;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+};
+
+// MAP
+$iconColors: (
+    visa: blue,
+    mc: black,
+    insta: violet,
+);
+
+@each $icon, $color in $iconColors {
+    .icon--#{$icon}{
+        color: $color;
+    }
+}
+
+/* FORMULARIO */
+.formulario {
+
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__data {
+
+    max-width: 800px;
+    min-width: 320px;
+    width: 80%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.formulario input,
+
+.formulario textarea {
+    width: 300px;
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+.formulario label {
+
+    text-align: right;
+    display: inline-block;
+    width: 200px;
+}
+
+.formulario textarea {
+
+    height: 150px;
+}
+
+.formulario button {
+
+    display: inline-block;
+    max-width: 200px;
+    min-width: 50px;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 10%;
+}

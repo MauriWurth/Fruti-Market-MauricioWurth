@@ -1,0 +1,22 @@
+{
+  "name": "mauriciowurth-frutimarket",
+  "version": "1.0.0",
+  "description": "proyecto coder",
+  "main": "index.js",
+  "scripts": {
+   "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauriWurth/Fruti-Market-MauricioWurth.git"
+  },
+  "author": "Maurico Wurth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauriWurth/Fruti-Market-MauricioWurth/issues"
+  },
+  "homepage": "https://github.com/MauriWurth/Fruti-Market-MauricioWurth#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

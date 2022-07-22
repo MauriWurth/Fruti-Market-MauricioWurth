@@ -1,0 +1,41 @@
+/* Breakpoints */
+@media (max-width: 1024px) {
+    .nav__ul {
+        display: none;
+    }
+
+    .btnResp {
+        display: inline-block;
+    }
+
+    .header__buscador__busqueda--input {
+        display: none;
+    }
+
+    .header__buscador__busqueda--btn {
+        display: none;
+    }
+
+    .section__header__div {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .div__form--a {
+        display: block;
+        /* background-color: red; */
+        padding: 0;
+    }
+
+    .div__form--a a {
+        margin: 0;
+    }
+
+    .section__div__div__body {
+        flex-direction: column;
+
+    }
+    
+}
