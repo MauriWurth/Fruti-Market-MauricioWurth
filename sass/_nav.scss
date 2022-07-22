@@ -28,6 +28,12 @@ nav {
     color: white;
     font-size: 2rem;
     font-weight: 900;
+    padding: 10px;
+
+    &:hover {
+        @extend .itemHover;
+        background-color: orange;
+    }
 }
 
 .nav__div {
