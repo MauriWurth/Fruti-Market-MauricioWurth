@@ -16,9 +16,7 @@ body {
   background-color: #AB3E26;
   line-height: 1.5;
   display: grid;
-  grid-template-areas: "header"
- "body"
- "footer";
+  grid-template-areas: "header" "body" "footer";
   grid-template-columns: 100%; }
 
 .itemHover, .nav__ul--li--a:hover, .div__form--a a:hover {
@@ -140,6 +138,96 @@ main {
   font-size: 2rem;
   grid-area: body;
   width: 100%; }
+
+.main__h1 {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 3.5rem;
+  margin: 10px auto; }
+
+.main__ul {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  list-style: none;
+  margin-bottom: 10px; }
+
+.div__main {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.div__main--h4--p--1 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.div__main--h4--p--2 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.div__main--h4--p--3 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.main__p {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto;
+  font-weight: 900; }
+
+.div__h3--p--1 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto; }
+
+.div__h3--p--2 {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto; }
+
+.div__h3--p--3 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto; }
+
+.div__h3--p--3--ul {
+  list-style: none; }
 
 .section__header {
   display: grid;
