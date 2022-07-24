@@ -16,7 +16,9 @@ body {
   background-color: #AB3E26;
   line-height: 1.5;
   display: grid;
-  grid-template-areas: "header" "body" "footer";
+  grid-template-areas: "header"
+ "body"
+ "footer";
   grid-template-columns: 100%; }
 
 .itemHover, .nav__ul--li--a:hover, .div__form--a a:hover {
