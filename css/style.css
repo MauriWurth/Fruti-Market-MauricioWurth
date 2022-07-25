@@ -19,6 +19,10 @@ body {
   grid-template-areas: "header" "body" "footer";
   grid-template-columns: 100%; }
 
+.itemHover, .nav__ul--li--a:hover, .div__form--a a:hover {
+  border-radius: 50%;
+  opacity: .8; }
+
 .header {
   background-color: white;
   grid-area: header; }
@@ -104,7 +108,10 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  font-weight: 900; }
+  font-weight: 900;
+  padding: 10px; }
+  .nav__ul--li--a:hover {
+    background-color: orange; }
 
 .nav__div {
   margin: 10px 20px;
@@ -127,13 +134,102 @@ nav {
   margin-left: 10px; }
 
 main {
-  background-color: #AB3E26;
   color: white;
   font-size: 2rem;
   grid-area: body;
   width: 100%; }
 
-.section__header__div {
+.main__h1 {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 3.5rem;
+  margin: 10px auto; }
+
+.main__ul {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  list-style: none;
+  margin-bottom: 10px; }
+
+.div__main {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.div__main--h4--p--1 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.div__main--h4--p--2 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.div__main--h4--p--3 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  margin: 10px auto; }
+
+.main__p {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto;
+  font-weight: 900; }
+
+.div__h3--p--1 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto; }
+
+.div__h3--p--2 {
+  background-color: orange;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto; }
+
+.div__h3--p--3 {
+  background-color: #F25835;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin: 10px auto; }
+
+.div__h3--p--3--ul {
+  list-style: none; }
+
+.section__header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center; }
@@ -152,50 +248,42 @@ main {
   width: 100%;
   height: 100%; }
 
-.section__header__div--div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 500px;
-  height: 450px;
-  align-items: center;
-  border-style: inset;
-  margin-top: 10px;
-  color: white; }
-
 .section__header__div--h3 {
   font-size: 4rem;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
 
-.section__header__div--h3--p {
-  font-size: 2rem; }
+.section__header__div--p {
+  font-size: 2rem;
+  text-align: center; }
 
 .section__header__div__table {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 20px; }
+  padding-top: 8px; }
 
 .div__table--th {
-  font-size: 4rem;
-  border-style: inset; }
+  font-size: 2.5rem;
+  border: 4px inset white; }
 
 .div__table--tr {
-  font-size: 2rem;
-  border-style: inset; }
+  font-size: 2.5rem;
+  border: 4px inset white; }
 
 .div__table--tr td {
-  font-size: 2rem;
-  border-style: inset; }
+  font-size: 2.5rem;
+  border: 4px inset white; }
 
 .section__div__body {
+  font-size: 2.5rem;
+  border: 4px inset white;
+  font-size: 3.5rem;
   margin: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 3.5rem;
-  color: white;
-  border-style: inset; }
+  color: white; }
 
 .section__div__div__body {
   padding-top: 10px;
@@ -315,6 +403,10 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 80px; }
+  .div__form--a a {
+    padding: 5px; }
+  .div__form--a a:hover {
+    background-color: orange; }
 
 .div__form--a a {
   text-decoration: none;
@@ -329,7 +421,6 @@ footer {
   color: aliceblue; }
 
 .foot__iconos {
-  color: #AB3E26;
   width: 10%;
   font-size: 4rem;
   padding: 10px;
@@ -339,6 +430,15 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
+
+.icon--visa {
+  color: blue; }
+
+.icon--mc {
+  color: black; }
+
+.icon--insta {
+  color: violet; }
 
 /* FORMULARIO */
 .formulario {
