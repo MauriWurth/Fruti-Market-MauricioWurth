@@ -5,6 +5,113 @@ main {
     width: 100%;
 }
 
+.main__h1 {
+    background-color: orange;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 3.5rem;
+    margin: 10px auto;
+
+}
+
+.main__ul {
+    background-color: #F25835;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.div__main {
+    background-color: orange;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    margin: 10px auto;
+
+}
+
+.div__main--h4--p--1 {
+    background-color: #F25835;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    margin: 10px auto;
+
+}
+
+.div__main--h4--p--2 {
+    background-color: #F25835;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    margin: 10px auto;
+
+}
+
+.div__main--h4--p--3 {
+    background-color: #F25835;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    margin: 10px auto;
+
+}
+
+.main__p {
+    background-color: orange;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin: 10px auto;
+    font-weight: 900;
+}
+
+.div__h3--p--1 {
+    background-color: #F25835;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin: 10px auto;
+
+}
+
+.div__h3--p--2 {
+    background-color: orange;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.div__h3--p--3 {
+    background-color: #F25835;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2rem;
+    margin: 10px auto;
+
+}
+
+.div__h3--p--3--ul {
+    list-style: none;
+}
 
 
 .section__header {
@@ -51,6 +158,7 @@ main {
     padding-top: 8px;
 
 }
+
 // MIXIN
 @mixin cellProps {
     font-size: 2.5rem;
@@ -137,4 +245,3 @@ main {
     border-style: inset;
 
 }
-
