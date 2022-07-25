@@ -16,7 +16,7 @@ body {
   background-color: #AB3E26;
   line-height: 1.5;
   display: grid;
-  grid-template-areas: "header" "body" "footer";
+  grid-template-areas: "header" "body" "footer";
   grid-template-columns: 100%; }
 
 .itemHover, .nav__ul--li--a:hover, .div__form--a a:hover {
@@ -36,11 +36,17 @@ body {
       margin: 0 auto;
       border-radius: 15px;
       font-size: 2.2rem; }
+      @media (max-width: 640px) {
+        .header__div--p {
+          font-size: 1.4rem; } }
   .header__buscador {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px 80px; }
+    @media (max-width: 640px) {
+      .header__buscador {
+        margin: 10px 0; } }
     .header__buscador--imagen {
       height: 120px;
       width: 240px;
@@ -49,6 +55,10 @@ body {
       animation-timing-function: cubic-bezier(0.5, 0, 1, 1);
       animation-duration: 1.7s;
       animation-direction: alternate; }
+      @media (max-width: 640px) {
+        .header__buscador--imagen {
+          height: 60px;
+          width: 120px; } }
     .header__buscador__busqueda {
       width: 500px;
       display: flex;
@@ -72,18 +82,51 @@ body {
       width: 220px;
       display: flex;
       justify-content: flex-end; }
+      @media (max-width: 640px) {
+        .header__buscador__iconos {
+          width: 140px; } }
 
 .icono {
   color: #F25835;
   font-size: 4rem;
   padding: 10px;
   margin: 10px; }
+  @media (max-width: 640px) {
+    .icono {
+      font-size: 3rem; } }
+  @media (max-width: 480px) {
+    .icono {
+      font-size: 2rem; } }
 
 @keyframes blinker {
   from {
     opacity: 1.0; }
   to {
     opacity: 0.0; } }
+
+/* Breakpoints */
+@media (max-width: 1024px) {
+  .nav__ul {
+    display: none; }
+  .header__buscador__busqueda--input {
+    display: none; }
+  .header__buscador__busqueda--btn {
+    display: none; }
+  .section__header__div {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .div__form--a {
+    display: block;
+    /* background-color: red; */
+    padding: 0; }
+  .div__form--a a {
+    margin: 0; } }
+
+@media (max-width: 425px) {
+  .nav__div--input {
+    display: none; } }
 
 nav {
   background-color: #F25835;
@@ -132,6 +175,12 @@ nav {
   font-size: 40px;
   color: green;
   margin-left: 10px; }
+
+@media (max-width: 960px) {
+  .nav__ul {
+    display: none; }
+  .btnResp {
+    display: inline-block; } }
 
 main {
   color: white;
@@ -230,9 +279,11 @@ main {
   list-style: none; }
 
 .section__header {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap; }
 
 .img__container {
   margin-top: 20px;
@@ -242,19 +293,21 @@ main {
 
 .carta {
   border: 2px inset white;
-  box-shadow: 3px 3px 5px #000; }
+  box-shadow: 3px 3px 5px #000;
+  width: 300px;
+  height: 350px; }
 
 .section__header__div--img {
   width: 100%;
   height: 100%; }
 
 .section__header__div--h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   text-align: center; }
 
 .section__header__div--p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center; }
 
 .section__header__div__table {
@@ -264,19 +317,19 @@ main {
   padding-top: 8px; }
 
 .div__table--th {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   border: 4px inset white; }
 
 .div__table--tr {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   border: 4px inset white; }
 
 .div__table--tr td {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   border: 4px inset white; }
 
 .section__div__body {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   border: 4px inset white;
   font-size: 3.5rem;
   margin: 10px 20px;
@@ -291,7 +344,8 @@ main {
   margin: 10px 20px;
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  flex-wrap: wrap; }
 
 .section__div__div__body--img {
   margin: 10px 20px;
@@ -325,6 +379,33 @@ main {
   height: 250px;
   border-radius: 5px;
   border-style: inset; }
+
+@media (max-width: 1024px) {
+  .section__header__div--h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center; }
+  .section__header__div--p {
+    font-size: 1.6rem;
+    text-align: center; }
+  .div__table--th {
+    font-size: 1.6rem;
+    border: 3px inset white; }
+  .div__table--tr {
+    font-size: 1.6rem;
+    border: 3px inset white; }
+  .div__table--tr td {
+    font-size: 1.6rem;
+    border: 3px inset white; }
+  .section__div__body {
+    font-size: 1.6rem;
+    border: 3px inset white;
+    font-size: 2.5rem;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; } }
 
 footer {
   background-color: #F25835;
@@ -361,10 +442,14 @@ footer {
 
 .div {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%; }
 
 .div__div {
   display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
   flex-direction: column; }
 
 .div__form {
@@ -422,9 +507,9 @@ footer {
 
 .foot__iconos {
   width: 10%;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0;
   text-align: end;
   cursor: pointer;
   display: flex;
@@ -485,26 +570,14 @@ footer {
   font-weight: 700;
   width: 10%; }
 
-/* Breakpoints */
 @media (max-width: 1024px) {
-  .nav__ul {
+  .foot__iconos {
     display: none; }
-  .btnResp {
-    display: inline-block; }
-  .header__buscador__busqueda--input {
-    display: none; }
-  .header__buscador__busqueda--btn {
-    display: none; }
-  .section__header__div {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center; }
   .div__form--a {
-    display: block;
-    /* background-color: red; */
-    padding: 0; }
-  .div__form--a a {
-    margin: 0; }
-  .section__div__div__body {
-    flex-direction: column; } }
+    display: none; }
+  .div__div {
+    width: 100%; } }
+
+@media (max-width: 425px) {
+  .div__form__input {
+    width: 150px; } }
