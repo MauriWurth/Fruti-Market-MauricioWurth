@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
     background-color: white;
     grid-area: header;
@@ -87,4 +88,95 @@
     to {
         opacity: 0.0;
     }
+=======
+.header {
+    background-color: white;
+    grid-area: header;
+
+    &__div {
+        padding: 10px 0;
+
+        &--p {
+            text-align: center;
+            color: white;
+            background-color: $color_base;
+            width: 50%;
+            margin: 0 auto;
+            border-radius: 15px;
+            font-size: 2.2rem;
+        }
+
+    }
+
+    &__buscador {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 80px;
+
+        &--imagen {
+
+            height: 120px;
+            width: 240px;
+            animation-name: blinker;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+            animation-duration: 1.7s;
+            animation-direction: alternate;
+        }
+
+        &__busqueda {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+
+            &--input {
+                border: solid 1px #0007;
+                padding: 10px;
+                width: 400px;
+                font-size: 2.2rem;
+                border-radius: 14px 0 0 14px;
+                outline: none;
+            }
+
+            &--btn {
+                background-color: $color_base;
+                border: solid 1px #0007;
+                font-size: 2.2rem;
+                padding: 10px;
+                border-radius: 0 14px 14px 0;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        &__iconos {
+            width: 220px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+
+
+}
+
+.icono {
+
+    color: $color_base;
+    font-size: 4rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+@keyframes blinker {
+
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+>>>>>>> 27961c7d84d2baaa5f4cada494ca40c4e78d35a4
 }
