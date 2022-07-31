@@ -1,0 +1,28 @@
+.active {
+    // display: inline-block;
+    background-color: $color_base;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    // flex-direction: column;
+    width: calc(100% - 80px);
+    height: 80px;
+    // top: 0;
+    right: 0;
+    // border: 1px solid red;
+    align-items: center;
+    z-index: 0;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+    .nav__ul--li--a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav__ul--li--a {
+        font-size: 1.4rem;
+    }
+}

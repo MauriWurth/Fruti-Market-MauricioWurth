@@ -581,3 +581,23 @@ footer {
 @media (max-width: 425px) {
   .div__form__input {
     width: 150px; } }
+
+.active {
+  background-color: #F25835;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: calc(100% - 80px);
+  height: 80px;
+  right: 0;
+  align-items: center;
+  z-index: 0;
+  flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+  .nav__ul--li--a {
+    font-size: 1.8rem; } }
+
+@media (max-width: 480px) {
+  .nav__ul--li--a {
+    font-size: 1.4rem; } }
